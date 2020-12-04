@@ -5,19 +5,22 @@ Introduction goes here.
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
-  ```ruby
-  gem 'spree_vendor_dashboard', github: '[your-github-handle]/spree_vendor_dashboard'
-  ```
 
-2. Install the gem using Bundler:
-  ```ruby
-  bundle install
-  ```
+    ```ruby
+    gem 'spree_vendor_dashboard', github: '[your-github-handle]/spree_vendor_dashboard'
+    ```
+
+2. Install the gem using Bundler
+
+    ```ruby
+    bundle install
+    ```
 
 3. Copy & run migrations
-  ```ruby
-  bundle exec rails g spree_vendor_dashboard:install
-  ```
+
+    ```ruby
+    bundle exec rails g spree_vendor_dashboard:install
+    ```
 
 4. Restart your server
 
@@ -38,7 +41,6 @@ Simply add this require statement to your spec_helper:
 ```ruby
 require 'spree_vendor_dashboard/factories'
 ```
-
 
 ## Contributing
 
