@@ -1,0 +1,45 @@
+<% content_for :sidebar do %>
+  <ul class="nav flex-column nav-pills" data-hook="admin_vendor_tab_options">
+    <li>
+      <%= link_to_with_icon 'report.svg',
+        'Dashboard',
+        '#',
+        # Spree.t(:"admin.user.account"),
+        # spree.edit_admin_user_path(@user),
+        class: "nav-link #{'active' if current == :dashboard}" %>
+    </li>
+    <li>
+      <%= link_to_with_icon 'edit.svg',
+        'Details',
+        '#',
+        # Spree.t(:"admin.user.account"),
+        # spree.edit_admin_user_path(@user),
+        class: "nav-link #{'active' if current == :account}" %>
+    </li>
+    <li>
+      <%= link_to_with_icon 'user.svg',
+        'Users',
+        '#',
+        # Spree.t(:"admin.user.account"),
+        # spree.edit_admin_user_path(@user),
+        class: "nav-link #{'active' if current == :user}" %>
+    </li>
+    <li>
+      <%= link_to_with_icon 'products.svg',
+        'Products',
+        '#',
+        # Spree.t(:"admin.user.account"),
+        # spree.edit_admin_user_path(@user),
+        class: "nav-link #{'active' if current == :user}" %>
+    </li>
+    <li>
+      <%= link_to_with_icon 'list.svg',
+        'Orders',
+        '#',
+        # Spree.t(:"admin.user.account"),
+        # spree.edit_admin_user_path(@user),
+        class: "nav-link #{'active' if current == :user}" %>
+    </li>
+
+  </ul>
+<% end %>
